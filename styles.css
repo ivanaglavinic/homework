@@ -1,11 +1,21 @@
+body {
+  text-align: center;
+  background-color: black;
+}
+#nav-bar {
+  background-color: white;
+}
+.logo {
+  padding-left: 10px;
+}
 .menu {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  padding: 0px 200px;
+  padding: 15px 60px;
+  gap: 60px;
 }
 li {
-  padding: 5px 35px;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -13,9 +23,25 @@ li {
   display: flex;
   justify-content: space-between;
 }
+header {
+  background-image: url("media/laptop.jpg");
+  background-position: top center;
+
+  background-size: 1200px 720px;
+  color: white;
+  padding: 150px 0px 250px 0px;
+}
+
+#about-me {
+  background-color: black;
+  color: white;
+}
 .my-websites {
   display: flex;
   justify-content: space-around;
+  margin: 0 auto;
+  max-width: 10%;
+  gap: 0px;
 }
 .skills-container {
   display: flex;
