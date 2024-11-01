@@ -1,0 +1,27 @@
+.menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0px 200px;
+}
+li {
+  padding: 5px 35px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#nav-box {
+  display: flex;
+  justify-content: space-between;
+}
+.my-websites {
+  display: flex;
+  justify-content: space-around;
+}
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+}
+.icons-box {
+  display: flex;
+  justify-content: space-around;
+}
