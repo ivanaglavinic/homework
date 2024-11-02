@@ -19,11 +19,11 @@
           <img src="media/my-logo.jpg" alt="logo" width="80" height="80" />
         </div>
         <ul class="menu">
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </main>
     </nav>
@@ -34,7 +34,7 @@
         <h4>Welcome to my programming journey</h4>
       </div>
     </header>
-    <section id="about-me">
+    <section id="about">
       <main id="about-me-box">
         <div class="about-me-front-end">Front-end Developer</div>
         <h1 class="about-me-name">Ivana</h1>
@@ -83,27 +83,55 @@
     <section id="projects">
       <h1 class="projects-header">Projects</h1>
       <main id="projects-box">
-        <a href="https://weather-app-ivana.netlify.app/">
-          <img
-            class="weather-app"
-            src="media/weather-app.png"
-            alt="weather-app"
-            width="340"
-            height="230"
-          />
-        </a>
-        <a href="https://main--world-clock-ivana.netlify.app/">
-          <img
-            class="world-clock"
-            src="media/world-clock.png"
-            alt="world-clock-app"
-            width="340"
-            height="230"
-        /></a>
+        <div>
+          <a href="https://weather-app-ivana.netlify.app/">
+            <img
+              class="weather-app"
+              src="media/weather-app.png"
+              alt="weather-app"
+              width="340"
+              height="230"
+            />
+          </a>
+          <p class="project-name">Weather Application</p>
+        </div>
+        <div>
+          <a href="https://main--world-clock-ivana.netlify.app/">
+            <img
+              class="world-clock"
+              src="media/world-clock.png"
+              alt="world-clock-app"
+              width="340"
+              height="230"
+          /></a>
+          <p class="project-name">World Clock</p>
+        </div>
       </main>
     </section>
     <section id="contact">
-      <main id="contact-box"></main>
+      <h1 class="contact-header">Contact</h1>
+      <main id="contact-box">
+        <h3 class="form-header">Contact me</h3>
+        <form class="contact-form">
+          <div class="info">
+            <label for="">Full Name</label>
+            <input type="text" id="name" required />
+            <label for="">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="message">
+            <label for="message"></label>
+            <input
+              type="message"
+              id="message"
+              placeholder="Express yourself..."
+              minlength="5"
+              rows="10"
+              required
+            />
+          </div>
+        </form>
+      </main>
     </section>
     <footer></footer>
   </body>

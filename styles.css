@@ -9,16 +9,23 @@ body {
 .logo {
   padding-left: 10px;
 }
+
 .menu {
   display: flex;
   justify-content: space-around;
   list-style: none;
   padding: 15px 60px;
   gap: 60px;
+  text-decoration: none;
 }
+
 li {
   font-size: 20px;
   text-transform: uppercase;
+}
+li a {
+  text-decoration: none;
+  color: black;
 }
 #nav-box {
   display: flex;
@@ -33,7 +40,7 @@ header {
   padding: 150px 0px 250px 0px;
 }
 
-#about-me {
+#about {
   margin-top: 150px;
   background-color: black;
   color: white;
@@ -82,9 +89,8 @@ header {
 }
 #skills-header {
   font-size: 36px;
-  padding-top: 20px;
   color: white;
-  text-align: center;
+  margin-bottom: 100px;
 }
 .icons-box {
   width: 100%;
@@ -152,7 +158,40 @@ header {
   transform: scale(1.1);
   transition: transform 0.9s ease;
 }
+.project-name {
+  color: white;
+  font-size: 20px;
+  padding: 12px;
+}
 
-.world-clock {
-  border-radius: 18px;
+.contact-header {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 100px;
+}
+#contact-box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(45, 103, 27, 0.653);
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 30%;
+  padding: 40px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#name {
+  width: 60%;
+  margin: 0 auto;
+}
+#email {
+  width: 60%;
+  margin: 0 auto;
+}
+.message {
+  width: 60%;
+  margin: 0 auto;
 }
