@@ -71,8 +71,7 @@ header {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  max-width: 10%;
-  gap: 0px;
+  max-width: 15%;
 }
 #skills {
   margin-top: 150px;
