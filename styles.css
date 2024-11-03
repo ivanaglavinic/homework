@@ -58,8 +58,8 @@ header {
 }
 
 .about-me-paragraph {
-  font-size: 20px;
-  text-align: center;
+  font-size: 18px;
+  text-align: justify;
   line-height: 2;
   max-width: 30%;
   letter-spacing: 2px;
@@ -88,9 +88,11 @@ header {
   gap: 20px;
 }
 #skills-header {
-  font-size: 36px;
+  font-size: 34px;
   color: white;
-  margin-bottom: 100px;
+  margin: 0px 630px 100px 630px;
+  padding: 10px 0px;
+  border: 1px solid rgba(255, 254, 254, 0.4);
 }
 .icons-box {
   width: 100%;
@@ -125,8 +127,8 @@ header {
 
 .skills-paragraph {
   color: white;
-  font-size: 20px;
-  text-align: center;
+  font-size: 18px;
+  text-align: justify;
   line-height: 2;
   max-width: 100%;
   letter-spacing: 2px;
@@ -136,9 +138,11 @@ header {
   margin-bottom: 150px;
 }
 .projects-header {
-  font-size: 36px;
+  font-size: 34px;
   color: white;
-  margin-bottom: 100px;
+  margin: 0px 630px 100px 630px;
+  padding: 10px 0px;
+  border: 1px solid rgba(255, 254, 254, 0.4);
 }
 #projects-box {
   display: grid;
@@ -165,33 +169,85 @@ header {
 }
 
 .contact-header {
-  font-size: 36px;
+  font-size: 34px;
   color: white;
-  margin-bottom: 100px;
+  margin: 0px 630px 100px 630px;
+  padding: 10px 0px;
+  border: 1px solid rgba(255, 254, 254, 0.4);
 }
 #contact-box {
   display: flex;
   flex-direction: column;
-  background-color: rgba(45, 103, 27, 0.653);
+  background-color: #1a335b8b;
   border-radius: 10px;
   margin: 0 auto;
   width: 30%;
-  padding: 40px;
+  padding: 30px 15px;
+  color: white;
+}
+.form-header {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+
+  line-height: 2;
 }
 .info {
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }
-#name {
-  width: 60%;
-  margin: 0 auto;
-}
+
+#name,
 #email {
-  width: 60%;
-  margin: 0 auto;
+  margin-top: 7px;
+  padding: 12px;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
 }
-.message {
-  width: 60%;
-  margin: 0 auto;
+
+label {
+  margin-top: 7px;
+}
+#message {
+  display: inline-block;
+  text-rendering: auto;
+  color: black;
+  background-color: white;
+  margin-top: 20px;
+  height: 170px;
+  appearance: auto;
+  resize: none;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+.button-form {
+  font-family: orbitron;
+  font-size: 16px;
+  width: 30%;
+  margin: 30px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+}
+.button-form:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+footer {
+  border-top: 1px solid rgba(255, 254, 254, 0.4);
+  margin-top: 70px;
+  padding: 12px;
+}
+footer p {
+  color: white;
 }
