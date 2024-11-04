@@ -71,14 +71,15 @@ header h2 {
 
 @media (max-width: 600px) {
   header {
-    padding: 100px 0;
+    margin-top: 40px;
+    padding: 26px 0;
     background-size: cover;
   }
 
   header h3,
   header h2,
   header h4 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 2;
   }
 }
@@ -115,15 +116,15 @@ header h2 {
 }
 @media (max-width: 768px) {
   #about {
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .about-me-front-end {
-    font-size: 18px;
+    font-size: 20px;
     margin-right: 20px;
   }
   .about-me-name {
-    font-size: 36px;
-    margin-left: 20px;
+    font-size: 38px;
+    margin-left: 40px;
   }
   .about-me-paragraph {
     font-size: 16px;
@@ -165,6 +166,11 @@ header h2 {
   margin-top: 100px;
   padding-top: 50px;
 }
+#skills-header {
+  font-size: 34px;
+  color: white;
+  margin: 0px 630px 100px 630px;
+}
 .skills-container {
   display: flex;
   justify-content: space-around;
@@ -174,11 +180,7 @@ header h2 {
   padding: 0px 100px;
   gap: 100px;
 }
-#skills-header {
-  font-size: 34px;
-  color: white;
-  margin: 0px 630px 100px 630px;
-}
+
 .icons-box {
   width: 100%;
   display: grid;
@@ -219,16 +221,47 @@ header h2 {
   max-width: 100%;
   letter-spacing: 2px;
   margin-left: 120px;
-
   padding-left: 80px;
   padding-right: 40px;
 }
 @media (max-width: 768px) {
+  #skills {
+    margin-top: 40px;
+  }
+  #skills-header {
+    font-size: 28px;
+    margin: 0 40px 50px 40px;
+    text-align: center;
+  }
+  .skills-container {
+    flex-direction: column;
+    margin-top: 0px;
+    gap: 70px;
+    padding: 0 30px;
+  }
+
+  .icons-box {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 150px;
+    gap: 15px;
+    row-gap: 15px;
+  }
+
   .skills-paragraph {
     font-size: 16px;
-    max-width: 80%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .icons-box {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-paragraph {
+    font-size: 16px;
   }
 }
 #projects {
@@ -262,6 +295,26 @@ header h2 {
   color: white;
   font-size: 20px;
   padding: 12px;
+}
+@media (max-width: 800px) {
+  #projects {
+    margin-top: 40px;
+  }
+  .projects-header {
+    font-size: 28px;
+    margin: 0 5% 50px 5%;
+  }
+
+  #projects-box {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .project-name {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 
 .contact-header {
@@ -341,6 +394,27 @@ label {
   background-color: lightgrey;
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  #contact {
+    margin-top: 30px;
+  }
+  .contact-header {
+    font-size: 28px;
+    margin: 0 5% 60px;
+  }
+
+  #contact-box {
+    width: 90%;
+  }
+
+  .form-header {
+    font-size: 20px;
+  }
+
+  #message {
+    height: 120px;
+  }
+}
 footer {
   border-top: 1px solid rgba(255, 254, 254, 0.4);
   margin-top: 70px;
@@ -348,4 +422,10 @@ footer {
 }
 footer p {
   color: white;
+}
+@media (max-width: 800px) {
+  footer p {
+    font-size: 14px; /* Smaller font size for smaller screens */
+    padding: 8px; /* Reduced padding for a more compact look */
+  }
 }
