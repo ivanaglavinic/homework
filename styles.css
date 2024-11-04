@@ -48,7 +48,7 @@ li a {
 
     line-height: 2;
     top: 100px;
-    left: 339px;
+    left: 282px;
   }
   #nav-bar ul.active {
     display: flex;
@@ -62,7 +62,7 @@ header {
   background-position: top center;
   background-size: cover;
   color: white;
-  padding: 130px 0px 350px 0px;
+  padding: 90px 0px 350px 0px;
   text-align: center;
 }
 header h2 {
@@ -75,13 +75,14 @@ header h2 {
     padding: 26px 0;
     background-size: cover;
   }
-  header h2 {
-    font-size: 1.5em;
-  }
-  header h3,
-  header h4 {
+  header h2,
+  header h3 {
+    margin-top: -15px;
     font-size: 1.2em;
-    line-height: 2;
+  }
+  header h4 {
+    margin-top: 130px;
+    font-size: 0.9em;
   }
 }
 
@@ -247,7 +248,7 @@ header h2 {
     display: flex;
     flex-wrap: wrap;
     margin-left: 60px;
-    width: 100%;
+    width: 90%;
     padding-top: 20px;
   }
 
