@@ -75,11 +75,12 @@ header h2 {
     padding: 26px 0;
     background-size: cover;
   }
-
+  header h2 {
+    font-size: 1.5em;
+  }
   header h3,
-  header h2,
   header h4 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 2;
   }
 }
@@ -184,10 +185,11 @@ header h2 {
 .icons-box {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
   padding: 0px;
   margin-left: 220px;
+  padding-right: 40px;
 }
 .logo-html,
 .logo-css,
@@ -224,6 +226,7 @@ header h2 {
   padding-left: 80px;
   padding-right: 40px;
 }
+
 @media (max-width: 800px) {
   #skills {
     margin-top: 40px;
@@ -241,17 +244,19 @@ header h2 {
   }
 
   .icons-box {
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 150px;
-    gap: 15px;
-    row-gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    width: 60%;
+    padding-top: 20px;
   }
 
   .skills-paragraph {
     font-size: 16px;
-    margin-left: 30px;
+    width: 95%;
     padding-left: 0;
     padding-right: 0;
+    margin-left: 10px;
   }
 }
 
@@ -413,6 +418,17 @@ label {
 
   #message {
     height: 120px;
+  }
+  .button-form {
+    font-size: 15px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .button-form {
+    font-size: 14px;
+    width: 80%;
   }
 }
 footer {
