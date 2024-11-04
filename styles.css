@@ -60,17 +60,33 @@ li a {
 header {
   background-image: url("media/laptop.jpg");
   background-position: top center;
-
-  background-size: 1200px 720px;
+  background-size: cover;
   color: white;
-  padding: 150px 0px 250px 0px;
+  padding: 130px 0px 350px 0px;
+  text-align: center;
 }
 header h2 {
   color: #05c633;
 }
 
+@media (max-width: 600px) {
+  header {
+    padding: 100px 0;
+    background-size: cover;
+  }
+
+  header h3,
+  header h2,
+  header h4 {
+    font-size: 1.5em;
+    line-height: 2;
+  }
+}
+
 #about {
-  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
   padding-top: 50px;
   background-color: black;
   color: white;
@@ -97,6 +113,25 @@ header h2 {
   margin-top: 60px;
   margin-bottom: 60px;
 }
+@media (max-width: 768px) {
+  #about {
+    margin-top: 10px;
+  }
+  .about-me-front-end {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  .about-me-name {
+    font-size: 36px;
+    margin-left: 20px;
+  }
+  .about-me-paragraph {
+    font-size: 16px;
+    max-width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
 .my-websites {
   display: flex;
   justify-content: space-around;
@@ -112,6 +147,19 @@ header h2 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgb(255, 255, 255) 0px 30px 60px -30px,
     rgba(255, 255, 255, 0.714) 0px -2px 6px 0px inset;
+}
+@media (max-width: 768px) {
+  .my-websites {
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .linkedin,
+  .github,
+  .mail {
+    margin-bottom: 20px;
+  }
 }
 #skills {
   margin-top: 100px;
@@ -174,6 +222,14 @@ header h2 {
 
   padding-left: 80px;
   padding-right: 40px;
+}
+@media (max-width: 768px) {
+  .skills-paragraph {
+    font-size: 16px;
+    max-width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 #projects {
   margin-top: 100px;
