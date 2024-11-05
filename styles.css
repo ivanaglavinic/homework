@@ -48,10 +48,11 @@ li a {
 
     line-height: 2;
     top: 100px;
-    left: 224px;
+    left: 226px;
   }
   #nav-bar ul.active {
     display: flex;
+    font-size: 0.9em;
   }
   .menu-icon {
     display: block;
