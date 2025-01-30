@@ -3,6 +3,8 @@ body {
   background-color: black;
   font-family: orbitron;
   letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
 }
 #nav-bar {
   display: flex;
@@ -38,27 +40,8 @@ li a {
   color: black;
   font-size: 40px;
 }
-@media (max-width: 800px) {
-  #nav-bar ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    background-color: white;
-    width: 40%;
 
-    line-height: 2;
-    top: 100px;
-    left: 226px;
-  }
-  #nav-bar ul.active {
-    display: flex;
-    font-size: 0.9em;
-  }
-  .menu-icon {
-    display: block;
-  }
-}
-header {
+.header {
   background-image: url("media/laptop.jpg");
   background-position: top center;
   background-size: cover;
@@ -70,24 +53,7 @@ header h2 {
   color: #05c633;
 }
 
-@media (max-width: 800px) {
-  header {
-    margin-top: 40px;
-    padding: 26px 0;
-    background-size: cover;
-  }
-  header h2,
-  header h3 {
-    margin-top: -15px;
-    font-size: 1.2em;
-  }
-  header h4 {
-    margin-top: 130px;
-    font-size: 0.9em;
-  }
-}
-
-#about {
+.about {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
@@ -109,7 +75,7 @@ header h2 {
 
 .about-me-paragraph {
   font-size: 18px;
-  text-align: justify;
+  text-align: center;
   line-height: 2;
   max-width: 30%;
   letter-spacing: 2px;
@@ -117,25 +83,7 @@ header h2 {
   margin-top: 60px;
   margin-bottom: 60px;
 }
-@media (max-width: 768px) {
-  #about {
-    margin-top: 0px;
-  }
-  .about-me-front-end {
-    font-size: 20px;
-    margin-right: 20px;
-  }
-  .about-me-name {
-    font-size: 38px;
-    margin-left: 40px;
-  }
-  .about-me-paragraph {
-    font-size: 16px;
-    max-width: 80%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-}
+
 .my-websites {
   display: flex;
   justify-content: space-around;
@@ -152,45 +100,40 @@ header h2 {
     rgb(255, 255, 255) 0px 30px 60px -30px,
     rgba(255, 255, 255, 0.714) 0px -2px 6px 0px inset;
 }
-@media (max-width: 800px) {
-  .my-websites {
-    flex-direction: row;
-    align-items: center;
-    max-width: 100%;
-  }
 
-  .linkedin,
-  .github,
-  .mail {
-    margin-bottom: 20px;
-  }
-}
-#skills {
+.skills,
+.projects,
+.contact {
   margin-top: 100px;
-  padding-top: 50px;
 }
-#skills-header {
+
+.skills-header,
+.projects-header,
+.contact-header {
+  display: block;
   font-size: 34px;
   color: white;
-  margin: 0px 630px 100px 630px;
+  margin: 60px 0px;
 }
+
 .skills-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  width: 85%;
-  margin: 0;
-  padding: 0px 100px;
-  gap: 100px;
+  width: 60%;
+  margin: auto;
+  padding: 0px;
 }
 
 .icons-box {
   width: 100%;
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   padding: 0px;
-  margin-left: 220px;
+  margin: auto;
   padding-right: 40px;
 }
 .logo-html,
@@ -220,67 +163,14 @@ header h2 {
 .skills-paragraph {
   color: white;
   font-size: 18px;
-  text-align: justify;
+  text-align: center;
   line-height: 2;
-  max-width: 100%;
+  width: 50%;
   letter-spacing: 2px;
-  margin-left: 120px;
-  padding-left: 80px;
-  padding-right: 40px;
+  margin: auto;
 }
 
-@media (max-width: 800px) {
-  #skills {
-    margin-top: 40px;
-  }
-  #skills-header {
-    font-size: 28px;
-    margin: 0 40px 50px 40px;
-    text-align: center;
-  }
-  .skills-container {
-    flex-direction: column;
-    margin-top: 0px;
-    gap: 70px;
-    padding: 0 30px;
-  }
-
-  .icons-box {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 94px;
-    width: 90%;
-    padding-top: 20px;
-  }
-
-  .skills-paragraph {
-    font-size: 16px;
-    width: 95%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 10px;
-  }
-}
-
-@media (max-width: 500px) {
-  .icons-box {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-paragraph {
-    font-size: 16px;
-  }
-}
-#projects {
-  margin-top: 100px;
-  padding-top: 50px;
-}
-.projects-header {
-  font-size: 34px;
-  color: white;
-  margin: 0px 630px 100px 630px;
-}
-#projects-box {
+.projects-box {
   display: grid;
   width: 70%;
   grid-template-columns: repeat(2, 1fr);
@@ -303,8 +193,170 @@ header h2 {
   font-size: 20px;
   padding: 12px;
 }
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  margin: 0 auto;
+  width: 30%;
+  padding: 10px 15px;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  color: white;
+  background-color: black;
+  line-height: 2;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.name,
+.email,
+.message {
+  margin-top: 7px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.message {
+  display: inline-block;
+  text-rendering: auto;
+  margin-top: 20px;
+  height: 170px;
+  appearance: auto;
+  resize: none;
+}
+.button-form {
+  font-family: orbitron;
+  font-size: 16px;
+  width: 30%;
+  margin: 30px auto;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+.button-form:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+footer {
+  border-top: 1px solid rgba(255, 254, 254, 0.4);
+  margin-top: 70px;
+  padding: 12px;
+}
+footer p {
+  color: white;
+}
+
 @media (max-width: 800px) {
-  #projects {
+  #nav-bar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 40%;
+
+    line-height: 2;
+    top: 100px;
+    left: 226px;
+  }
+  #nav-bar ul.active {
+    display: flex;
+    font-size: 0.9em;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .header {
+    margin-top: 40px;
+    padding: 26px 0;
+    background-size: cover;
+  }
+  header h2,
+  header h3 {
+    margin-top: -15px;
+    font-size: 1.2em;
+  }
+  header h4 {
+    margin-top: 130px;
+    font-size: 0.9em;
+  }
+
+  .about {
+    margin-top: 0px;
+  }
+  .about-me-front-end {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .about-me-name {
+    font-size: 38px;
+    margin-left: 40px;
+  }
+  .about-me-paragraph {
+    font-size: 16px;
+    max-width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .my-websites {
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .linkedin,
+  .github,
+  .mail {
+    margin-bottom: 20px;
+  }
+  .skills {
+    margin-top: 40px;
+  }
+  .skills-header {
+    font-size: 28px;
+    margin: 0 40px 50px 40px;
+    text-align: center;
+  }
+  .skills-container {
+    flex-direction: column;
+    margin-top: 0px;
+    gap: 50px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .icons-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    width: 80%;
+    padding-top: 20px;
+  }
+
+  .skills-paragraph {
+    font-size: 16px;
+    width: 95%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .projects {
     margin-top: 40px;
   }
   .projects-header {
@@ -312,7 +364,7 @@ header h2 {
     margin: 0 5% 50px 5%;
   }
 
-  #projects-box {
+  .projects-box {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -322,87 +374,7 @@ header h2 {
     font-size: 14px;
     padding: 10px;
   }
-}
-
-.contact-header {
-  font-size: 34px;
-  color: white;
-  margin: 0px 630px 100px 630px;
-}
-#contact {
-  margin-top: 100px;
-  padding-top: 50px;
-}
-#contact-box {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  margin: 0 auto;
-  width: 30%;
-  padding: 30px 15px;
-  color: white;
-}
-#1a335b8b .form-header {
-  font-size: 22px;
-  margin-bottom: 30px;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  margin: 0 auto;
-
-  line-height: 2;
-}
-.info {
-  display: flex;
-  flex-direction: column;
-}
-
-#name,
-#email {
-  margin-top: 7px;
-  padding: 12px;
-  font-size: 16px;
-  color: black;
-  background-color: white;
-  border: none;
-  border-radius: 5px;
-}
-
-label {
-  margin-top: 7px;
-}
-#message {
-  display: inline-block;
-  text-rendering: auto;
-  color: black;
-  background-color: white;
-  margin-top: 20px;
-  height: 170px;
-  appearance: auto;
-  resize: none;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-}
-.button-form {
-  font-family: orbitron;
-  font-size: 16px;
-  width: 30%;
-  margin: 30px auto;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: white;
-}
-.button-form:hover {
-  background-color: lightgrey;
-  cursor: pointer;
-}
-@media (max-width: 800px) {
-  #contact {
+  .contact {
     margin-top: 30px;
   }
   .contact-header {
@@ -410,7 +382,7 @@ label {
     margin: 0 5% 60px;
   }
 
-  #contact-box {
+  .contact-box {
     width: 90%;
   }
 
@@ -418,33 +390,19 @@ label {
     font-size: 20px;
   }
 
-  #message {
+  .message {
     height: 120px;
   }
-  .button-form {
-    font-size: 15px;
-    width: 70%;
-  }
-}
 
-@media (max-width: 600px) {
   .button-form {
     font-size: 14px;
     width: 80%;
-    color: black;
   }
-}
-footer {
-  border-top: 1px solid rgba(255, 254, 254, 0.4);
-  margin-top: 70px;
-  padding: 12px;
-}
-footer p {
-  color: white;
-}
-@media (max-width: 800px) {
   footer p {
     font-size: 12px;
     padding: 8px;
   }
+}
+.skills-paragraph {
+  font-size: 16px;
 }

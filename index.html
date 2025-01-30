@@ -29,7 +29,7 @@
       </ul>
       <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     </nav>
-    <header>
+    <header class="header">
       <div class="introduction-box">
         <h3>Hello, I'm Ivana</h3>
 
@@ -39,8 +39,8 @@
         <h4>- Welcome to my programming journey -</h4>
       </div>
     </header>
-    <section id="about">
-      <main id="about-me-box">
+    <section id="about" class="about">
+      <main id="about-me-box" class="about-me-box">
         <div class="about-me-front-end">Front-end Developer</div>
         <h1 class="about-me-name">Ivana</h1>
         <div class="about-me-paragraph">
@@ -71,9 +71,9 @@
         </div>
       </main>
     </section>
-    <section id="skills">
-      <main id="skills-box">
-        <h1 id="skills-header">Skills</h1>
+    <section id="skills" class="skills">
+      <main id="skills-box" class="skills-box">
+        <h1 class="skills-header">Skills</h1>
         <div class="skills-container">
           <div class="icons-box">
             <img src="media/html.png" alt="HTML" class="logo-html" />
@@ -93,9 +93,9 @@
         </div>
       </main>
     </section>
-    <section id="projects">
+    <section id="projects" class="projects">
       <h1 class="projects-header">Projects</h1>
-      <main id="projects-box">
+      <main id="projects-box" class="projects-box">
         <div>
           <a href="https://weather-app-ivana.netlify.app/">
             <img
@@ -121,20 +121,20 @@
         </div>
       </main>
     </section>
-    <section id="contact">
+    <section id="contact" class="contact">
       <h1 class="contact-header">Contact</h1>
-      <main id="contact-box">
-        <h3 class="form-header">Contact me</h3>
+      <main id="contact-box" class="contact-box">
         <form class="contact-form">
           <div class="info">
             <label for="">Full Name</label>
-            <input type="text" id="name" required />
+            <input type="text" id="name" class="name" required />
             <label for="">Email</label>
-            <input type="email" id="email" required />
+            <input type="email" id="email" class="email" required />
 
             <label for="message"></label>
             <textarea
               id="message"
+              class="message"
               placeholder="Express yourself..."
               minlength="5"
               rows="10"
