@@ -74,7 +74,8 @@ const secondWords = [
 const randomNumber1 = Math.floor(Math.random() * 10);
 const randomNumber2 = Math.floor(Math.random() * 10);
 
-const startupName = firstWords[randomNumber1] + " " + secondWords[randomNumber2];
+const startupName =
+  firstWords[randomNumber1] + " " + secondWords[randomNumber2];
 
 console.log(
   "The startup: " +
@@ -83,3 +84,61 @@ console.log(
     startupName.length +
     " characters."
 );
+
+// exercise in class
+const balance = 105;
+let bankAccount;
+if (balance <= 0) {
+  console.log("Please deposit some money");
+} else if (balance <= 1000) {
+  console.log("Your balance is looking okay");
+} else if (balance <= 3000) {
+  console.log("Your balance is looking good");
+} else if (balance <= 10000) {
+  console.log("Your balance is fantastic");
+} else {
+  console.log("Your balance is AMAZING!");
+}
+
+//exercises in class
+function getCircleArea(radius) {
+  const circleArea = radius * radius * Math.PI;
+  return circleArea;
+}
+
+const area = getCircleArea(20);
+
+console.log(area);
+
+function celciusToFahreneit(celsius) {
+  return (9 / 5) * celsius + 32;
+}
+console.log(celciusToFahreneit(30));
+
+//scope
+
+const global = "global";
+function scopeTest() {
+  console.log(global);
+  const functionScope = "functionScope";
+  console.log(functionScope);
+  function tester() {
+    console.log(global);
+
+    const testerVariable = "testerVariable";
+    console.log(testerVariable);
+  }
+
+  tester();
+}
+
+scopeTest();
+
+
+//for loop
+function listNumbers(amount){
+for (let i=0; i < amount; i++) {
+let numbers = "";
+}}
+
+listNumbers(24);
